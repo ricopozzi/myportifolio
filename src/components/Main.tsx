@@ -17,6 +17,9 @@ export function Main() {
           className='bg-black/40 w-11/12 h-5/6 backdrop-blur-lg rounded-xl flex justify-center items-center flex-col
         shadow-none shadow-emerald-900'
         >
+          <p className='font-DMSans text-lg text-white'>
+            *não está totalmente pronto*
+          </p>
           <h1 className='font-DMSerif text-4xl md:text-7xl text-white'>
             Enrico Pozzi
           </h1>
