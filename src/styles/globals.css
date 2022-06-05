@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+       ::selection {
+        color: white;
+        background: rgb(52, 211, 153);
+      }
+           
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
