@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Tecs() {
   return (
     <>
@@ -9,17 +11,55 @@ export function Tecs() {
           Ferramentas <span className='text-emerald-400'>Favoritas</span>
         </p>
         <div className='md:w-1/2 min-h-52 p-4 flex gap-x-16 gap-y-7 mt-6 md:mt-2 justify-center flex-wrap'>
-          <img src='typescript.svg' alt='' className='w-16 rounded-lg' />
-          <img src='react.svg' alt='' className='w-16 rounded-lg' />
-          <img src='next.svg' alt='' className='w-16 rounded-lg' />
-          <img
-            src='react-native.svg'
+          <Image
+            src='/typescript.svg'
             alt=''
-            className='w-[4.5rem] rounded-lg'
+            width={64}
+            height={64}
+            className='rounded-lg'
           />
-          <img src='tailwindcss.svg' alt='' className='w-16 rounded-lg' />
-          <img src='sass.svg' alt='' className='w-16 rounded-lg' />
-          <img src='node.svg' alt='' className='w-16 rounded-lg' />
+          <Image
+            src='/react.svg'
+            alt=''
+            width={64}
+            height={64}
+            className='rounded-lg'
+          />
+          <Image
+            src='/next.svg'
+            alt=''
+            width={64}
+            height={64}
+            className='rounded-lg'
+          />
+          <Image
+            src='/react-native.svg'
+            alt=''
+            width={64}
+            height={64}
+            className='rounded-lg'
+          />
+          <Image
+            src='/tailwindcss.svg'
+            alt=''
+            width={64}
+            height={64}
+            className='rounded-lg'
+          />
+          <Image
+            src='/sass.svg'
+            alt=''
+            width={64}
+            height={64}
+            className='rounded-lg'
+          />
+          <Image
+            src='/node.svg'
+            alt=''
+            width={64}
+            height={64}
+            className='rounded-lg'
+          />
         </div>
         <div className=' md:w-1/2 min-h-36 flex flex-col '>
           <h1 className='text-center font-DMSerif text-2xl text-gray-900 mt-4'>

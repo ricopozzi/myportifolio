@@ -6,6 +6,8 @@ import { Header } from "../components/Header";
 import { Tecs } from "../components/Tecs";
 import { Projects } from "../components/Projects";
 import { Certifications } from "../components/Certifications";
+import { Avatar } from "../components/Avatar";
+import { Contact } from "../components/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +17,8 @@ const Home: NextPage = () => {
       <Tecs />
       <Projects />
       <Certifications />
+      <Contact />
+      <Avatar />
     </>
   );
 };

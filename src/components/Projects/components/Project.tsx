@@ -1,8 +1,7 @@
 import React, { HTMLAttributes } from "react";
-
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import { FiInfo } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
 interface ProjectProps extends HTMLAttributes<any> {
@@ -30,13 +29,17 @@ export const Project: React.FC<ProjectProps> = ({
       {...rest}
       className='min-h-[60vh] w-5/6 mx-auto flex flex-col lg:flex-row'
     >
-      <motion.div className='w-full lg:w-1/2 flex flex-col justify-center items-center py-6 '>
-        <motion.img
-          src={`${imgSrc}`}
+      <motion.div
+        initial={{ opacity: 0, translateY: -100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ margin: "0px", once: true }}
+        className='w-full lg:w-1/2 flex flex-col justify-center items-center py-6 '
+      >
+        <Image
+          src={`/${imgSrc}`}
           className='object-cover h-[25vh] lg:w-[35vw] lg:h-[44vh] rounded-xl shadow-2xl shadow-blue-400/30'
-          initial={{ opacity: 0, translateY: -100 }}
-          whileInView={{ opacity: 1, translateY: 0 }}
-          viewport={{ margin: "0px", once: true }}
+          width={600}
+          height={400}
         />
       </motion.div>
       <motion.div

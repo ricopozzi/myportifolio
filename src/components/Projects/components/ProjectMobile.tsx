@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { FiInfo } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 interface ProjectProps extends HTMLAttributes<any> {
   imgSrc: string;
@@ -30,14 +31,18 @@ export const ProjectMobile: React.FC<ProjectProps> = ({
       {...rest}
       className='min-h-[60vh] w-5/6 mx-auto flex flex-col lg:flex-row'
     >
-      <motion.div className='w-full lg:w-1/2 flex flex-col justify-center items-center py-6 '>
+      <motion.div
+        initial={{ opacity: 0, translateY: -100 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ margin: "0px", once: true }}
+        className='w-full lg:w-1/2 flex flex-col justify-center items-center py-6 '
+      >
         <div className='w-60'>
-          <motion.img
-            src={`${imgSrc}`}
+          <Image
+            src={`/${imgSrc}`}
             className='object-fill rounded-xl shadow-2xl shadow-blue-400/30'
-            initial={{ opacity: 0, translateY: -100 }}
-            whileInView={{ opacity: 1, translateY: 0 }}
-            viewport={{ margin: "0px", once: true }}
+            width={350}
+            height={600}
           />
         </div>
       </motion.div>
