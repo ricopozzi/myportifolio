@@ -40,6 +40,7 @@ export const Project: React.FC<ProjectProps> = ({
           className='object-cover h-[25vh] lg:w-[35vw] lg:h-[44vh] rounded-xl shadow-2xl shadow-blue-400/30'
           width={600}
           height={400}
+          lazyBoundary='100px'
         />
       </motion.div>
       <motion.div
