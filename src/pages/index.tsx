@@ -12,6 +12,10 @@ import { Contact } from "../components/Contact";
 const Home: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Pozzi</title>
+        <link rel='icon' href='/topicon.svg' />
+      </Head>
       <Header />
       <Main />
       <Tecs />

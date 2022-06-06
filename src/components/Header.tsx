@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { Menu } from "@headlessui/react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export function Header() {
   const router = useRouter();
@@ -10,15 +11,19 @@ export function Header() {
       <header className='absolute w-[99vw] h-16 backdrop-blur-lg bg-[transparent] top-0 z-50'>
         <nav className='mx-auto h-full md:w-3/4 flex px-4'>
           <div className='flex h-full w-1/5'>
-            <img src='diamond.svg' alt='' className='w-20 h-14' />
+            <Image src='/diamond.svg' alt='' width={80} height={56} />
             <h1 className='text-white font-bold tracking-wide h-full flex justify-start items-center text-2xl'>
               Enrico
             </h1>
           </div>
 
           <div className='flex-1 h-16  justify-start pl-11 hidden md:flex md:gap-x-16'>
-            <button className='text-gray-200 font-medium'>Trabalhos</button>
-            <button className='text-gray-200 font-medium'>Posts</button>
+            <button className='text-gray-200 font-medium cursor-not-allowed'>
+              Trabalhos
+            </button>
+            <button className='text-gray-200 font-medium cursor-not-allowed'>
+              Posts
+            </button>
             <button
               onClick={() => router.push("https://github.com/ricopozzi")}
               className='text-inherit font-medium w-28 h-8 my-auto bg-gradient-to-r from-emerald-300 to-emerald-400 rounded-md flex
