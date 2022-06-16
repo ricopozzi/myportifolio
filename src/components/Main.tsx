@@ -9,6 +9,8 @@ export function Main() {
           loop
           muted
           playsInline
+          width={"100vw"}
+          height={"100vh"}
           className='absolute w-full h-screen object-cover'
         >
           <source src='bg-tunnel.mp4' type='video/mp4' />

@@ -21,7 +21,10 @@ export function Header() {
             <button className='text-gray-200 font-medium cursor-not-allowed'>
               Trabalhos
             </button>
-            <button className='text-gray-200 font-medium cursor-not-allowed'>
+            <button
+              onClick={() => window.open("https://blog.pozzi.dev")}
+              className='text-gray-200 font-medium cursor-pointer'
+            >
               Posts
             </button>
             <button
@@ -50,7 +53,10 @@ export function Header() {
                   Trabalhos
                 </a>
               </div>
-              <div className='py-1 border-b cursor-pointer'>
+              <div
+                onClick={() => window.open("https://blog.pozzi.dev")}
+                className='py-1 border-b cursor-pointer'
+              >
                 <a className='group flex items-center px-4 py-2 text-sm font-medium font-DMSans text-gray-700'>
                   Posts
                 </a>

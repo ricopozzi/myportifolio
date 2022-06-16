@@ -17,6 +17,7 @@ export function Tecs() {
             width={64}
             height={64}
             className='rounded-lg'
+            lazyBoundary='500px'
           />
           <Image
             src='/react.svg'
@@ -24,6 +25,7 @@ export function Tecs() {
             width={64}
             height={64}
             className='rounded-lg'
+            lazyBoundary='500px'
           />
           <Image
             src='/next.svg'
@@ -31,6 +33,7 @@ export function Tecs() {
             width={64}
             height={64}
             className='rounded-lg'
+            lazyBoundary='500px'
           />
           <Image
             src='/react-native.svg'
@@ -38,6 +41,7 @@ export function Tecs() {
             width={64}
             height={64}
             className='rounded-lg'
+            lazyBoundary='500px'
           />
           <Image
             src='/tailwindcss.svg'
@@ -45,6 +49,7 @@ export function Tecs() {
             width={64}
             height={64}
             className='rounded-lg'
+            lazyBoundary='500px'
           />
           <Image
             src='/sass.svg'
@@ -52,6 +57,7 @@ export function Tecs() {
             width={64}
             height={64}
             className='rounded-lg'
+            lazyBoundary='500px'
           />
           <Image
             src='/node.svg'
@@ -59,6 +65,7 @@ export function Tecs() {
             width={64}
             height={64}
             className='rounded-lg'
+            lazyBoundary='500px'
           />
         </div>
         <div className=' md:w-1/2 min-h-36 flex flex-col '>
