@@ -47,7 +47,7 @@ export const Projects = () => {
         />
 
         <Project
-          imgSrc='notionblog.png'
+          imgSrc='notionblog.webp'
           title='Notion Blog'
           stack={[
             "Notion API (CMS)",
