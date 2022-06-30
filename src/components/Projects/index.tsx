@@ -47,6 +47,26 @@ export const Projects = () => {
         />
 
         <Project
+          imgSrc='notionblog.png'
+          title='Notion Blog'
+          stack={[
+            "Notion API (CMS)",
+            "Typescript",
+            "NextJs",
+            "ReactJs",
+            "TailwindCSS",
+            "Vercel",
+            "Framer Motion",
+          ]}
+          accessURL='https://blog.pozzi.dev'
+          GHSource='https://github.com/ricopozzi/tailwindBlog'
+          observation='* Os posts são aleatórios, feito como objeto de estudo.'
+          style={{
+            marginTop: "20px",
+          }}
+        />
+
+        <Project
           imgSrc='blog.png'
           title='Blog'
           stack={[
