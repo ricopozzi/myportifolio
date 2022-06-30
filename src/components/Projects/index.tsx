@@ -59,7 +59,7 @@ export const Projects = () => {
             "Framer Motion",
           ]}
           accessURL='https://blog.pozzi.dev'
-          GHSource='https://github.com/ricopozzi/tailwindBlog'
+          GHSource='https://github.com/ricopozzi/notionblog'
           observation='* Os posts são aleatórios, feito como objeto de estudo.'
           style={{
             marginTop: "20px",
